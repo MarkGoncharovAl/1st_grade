@@ -1,0 +1,10 @@
+#we will work with cats)
+
+main[0]
+{
+	#we can also use "double"
+	new cat = 6.6542;
+	
+	while [cat > 0] {cat = cat - 1;}
+	show $"Our cat is " $cat;
+}

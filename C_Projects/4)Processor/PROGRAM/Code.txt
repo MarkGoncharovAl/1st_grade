@@ -1,0 +1,62 @@
+jump begin;
+	
+	:do_read;
+	scan cx; push cx;
+	push bx; push 1; add; pop bx;
+	jump reading;
+
+
+	:check_next;
+	pop dx;
+	cmp dx,cx;
+	< else;
+	pushE dx;
+	push bx; push 1; add; pop bx;
+	jump to_stackE;	
+
+
+	:else;
+	pushE cx;
+	pushE dx; popE cx;
+	push bx; push 1; add; pop bx;
+	jump to_stackE;	
+
+	
+	
+
+:begin;
+scan ax;
+push 0; pop bx;
+
+:reading;
+cmp ax,bx;
+!= do_read;
+
+:main_circle;
+cmp ax, 1;
+= end;
+push 0; pop bx;
+pop cx; push cx;
+
+:to_stackE;
+cmp ax,bx;
+!= check_next;
+
+print; printE;
+push ax; push 1; sub; pop ax;
+
+
+push cx;
+:final_circle;
+cmp bx,1;
+= main_circle;
+popE dx; push dx;
+push bx; push 1; sub; pop bx;
+jump final_circle;
+
+
+:end;
+print;
+
+
+exit;

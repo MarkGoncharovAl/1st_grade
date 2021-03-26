@@ -1,0 +1,11 @@
+#we will work with cats)
+
+
+main[0]
+{
+	new cat = 6;
+	show $"Just an increment of cat: " $inc[cat];
+}
+
+#as you can see functions can be declared everywhere
+inc[1, num] {result num + 1;}

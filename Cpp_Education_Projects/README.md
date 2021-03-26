@@ -1,0 +1,1 @@
+### There's no more than weird trying to rewrite base C++ structs. But the main aim was to play with realizations) It was pretty fun) ###  

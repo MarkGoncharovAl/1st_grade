@@ -1,0 +1,10 @@
+Enter your x: 5
+
+Your Tree has a form: \[\frac{-8.00}{x^{3.00}}\]
+The result: -0.064
+
+Your differential Tree has a form: \[\frac{24.00*x^{2.00}}{x^{6.00}}\]
+The result of differential: 0.038
+
+Your differencial Tree of differential Tree has a form: \[\frac{((48.00*x)*x^{6.00})-((6.00*x^{5.00})*(24.00*x^{2.00}))}{x^{12.00}}\]
+The result of differential of differential: -0.031

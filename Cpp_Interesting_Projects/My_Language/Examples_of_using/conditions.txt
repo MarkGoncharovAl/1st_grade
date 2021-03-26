@@ -1,0 +1,11 @@
+#we will work with cats)
+
+main[0]
+{
+	new cat = 0;
+	show $"Print new cat: "; 	get $cat;
+	
+	if [cat > 0]
+		{show $"cat is positive)";}
+	else {show $"cat is negative!";}
+}

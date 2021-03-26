@@ -1,0 +1,7 @@
+#we will work with cats)
+
+main[0]
+{
+	new cat = 6;
+	show $"Just a cat: " $cat;
+}

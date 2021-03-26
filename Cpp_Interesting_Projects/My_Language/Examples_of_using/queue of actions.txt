@@ -1,0 +1,8 @@
+#we will work with cats)
+
+main[0]
+{
+	#actions are doing in correct queue
+	new cat = 2 + 5 * 3;
+	show $cat; #shows 17
+}

@@ -1,0 +1,12 @@
+#we will work with cats)
+
+main[0]
+{
+	#if statement are operatin in correct queue too
+	new cat = 0;
+	if [cat = 0 or cat > 0 and cat < 0] {show $1;} #true
+	else {show $2;}
+	
+	if [(cat = 0 or cat > 0) and cat < 0] {show $3;} #false
+	else {show $4;}
+}

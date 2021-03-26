@@ -1,0 +1,7 @@
+\\molar1|5.65\\
+\\molar2|3.54\\
+
+main[0]
+{
+	show $molar1 + molar2;
+}

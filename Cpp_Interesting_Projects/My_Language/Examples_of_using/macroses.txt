@@ -1,0 +1,26 @@
+#preprocessoring
+
+\\print:|show $\\
+\\true_|0 = 0\\ #just obviously
+
+main[0]
+{
+	new cat = 6;
+	print:cat;
+
+	next_tests[];
+}
+
+#that programm will show you cat)
+#moreovere you can use it in order to set global constants, that every function see)
+
+#example:
+
+\\molar_mass|3.543\\
+\\gamma|1.987\\
+
+next_tests[0]
+{
+	if [true_] {show $molar_mass + gamma;}
+}
+

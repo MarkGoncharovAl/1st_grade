@@ -1,0 +1,25 @@
+scan ax                                      алгоритм: наибольшее число из ax вводимых;
+
+push 1; pop bx;
+scan cx; push cx;
+
+	:1;
+	push 1; push bx; add; pop bx; 
+	
+	scan cx; pop dx;
+		cmp cx,dx;
+		> 2;
+		push dx;	
+	:3;
+	cmp bx,ax;
+	< 1;
+	
+	jump 4;
+
+:2;
+push cx;
+jump 3;
+
+:4;
+pop dx; print dx;
+exit;
